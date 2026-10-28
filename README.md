@@ -1,16 +1,18 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Интерактивное веб-приложение для поиска книг, просмотра подробной информации и формирования личной библиотеки. Проект написан на React с использованием внешних API для получения данных о книгах и их описаний.
 
-Currently, two official plugins are available:
+ Основной функционал
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Живой поиск книг: Поиск произведений по названию или автору через API Open Library. Реализована задержка (debounce) для снижения нагрузки на API при вводе.
+Детальная информация:При клике на книгу открывается модальное окно с обложкой, названием, годом издания, описанием и жанрами (топиками). Описание и категории подтягиваются из Wikipedia API.
+Личная полка:Возможность добавлять книги в два раздела: «Хочу прочитать» и «Прочитано». 
+Сохранение данных: Список книг на полке и их статусы сохраняются в localStorage браузера, поэтому они не пропадают при перезагрузке страницы.
+  Удобный UI:Адаптивная верстка, плавные анимации появления модального окна, обработка состояний загрузки и ошибок (если API не отвечает или книга не найдена).
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Технологии
+React (Функциональные компоненты, хуки: useStat, useEffect, useRef)
+JavaScript (ES6+)
+CSS3(Grid, Flexbox, CSS-переменные, Keyframes-анимации)
+REST API:
+[Open Library API](https://openlibrary.org/developers/api) — для поиска книг, получения обложек и метаданных.
+[Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page) — для получения текстового описания и категорий (жанров) книги.
