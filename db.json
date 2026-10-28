@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "title": "Пост номер 1",
+      "body": "Текст поста",
+      "id": "JksasEyXBA8"
+    },
+    {
+      "title": "Пост номер 2",
+      "body": "Текст поста",
+      "id": "AAg5NeVPujE"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
