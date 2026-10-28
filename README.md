@@ -16,3 +16,5 @@ CSS3(Grid, Flexbox, CSS-переменные, Keyframes-анимации)
 REST API:
 [Open Library API](https://openlibrary.org/developers/api) — для поиска книг, получения обложек и метаданных.
 [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page) — для получения текстового описания и категорий (жанров) книги.
+
+https://maksim18da.github.io/Bookshelf/
